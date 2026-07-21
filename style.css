@@ -1,0 +1,219 @@
+
+
+:root {
+  --bg-color: #f8fafc;          
+  --text-main: #0f172a;        
+  --text-muted: #475569;        
+  --primary-color: #0369a1;    
+  --primary-hover: #0284c7;     
+  --card-bg: #ffffff;           
+  --border-color: #e2e8f0;     
+  
+  /* Layout Options */
+  --max-width: 1200px;
+  --transition-speed: 0.2s;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* 
+  NAVIGATION BAR
+*/
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* 
+  HERO SECTION (Centered Content)
+*/
+.hero-section {
+  padding: 120px 0 100px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.hero-para {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 35px;
+  max-width: 680px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 6px;
+  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* 
+  OPERATIONS SECTION (4-Column Grid)
+*/
+.features-section {
+  padding: 85px 0;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px;
+}
+
+/* Surgical Operation Card */
+.feature-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.feature-box:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.box-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.box-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* 
+  FOOTER SECTION
+*/
+footer {
+  background-color: #0f172a;    /* Dark slate footer background */
+  color: #94a3b8;               /* Clean grey text */
+  padding: 60px 0 40px 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-info h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin-bottom: 6px;
+}
+
+.footer-copyright {
+  text-align: right;
+}
