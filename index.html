@@ -11,7 +11,7 @@
 
   <!-- Clean Navbar -->
   <header>
-    <div class="container nav-container">
+    <div class="container nav-container fade-1">
       <a href="#home" class="logo" id="nav-logo">
         EyeLife<span>.</span>
       </a>
@@ -32,7 +32,7 @@
     <!-- Hero Section -->
     <section class="hero-section" id="home">
       
-      <div class="container hero-container">
+      <div class="container hero-container fade-2">
         <h1 class="hero-heading" id="hero-title">Clear Vision for a Better Life</h1>
         <p class="hero-para" id="hero-desc">
           Welcome to EyeLife. Led by experienced eye surgeons, we combine state-of-the-art diagnostic technology with advanced, gentle treatments to preserve and restore your vision.
@@ -40,7 +40,7 @@
         <a href="#contact" class="cta-btn" id="cta-button">Schedule Consultation</a>
       </div>
 
-      <div class="img-container">
+      <div class="img-container fade-2">
         <p class="center-text">FOCUS</p>
         <p class="p1">SEE LIFE IN</p>
         <p class="p2">RESTORE</p>
@@ -53,48 +53,75 @@
       </div>
     </section>
 
-    <!-- Operations / Surgical Services Section -->
-    <section class="features-section" id="operations">
-      <div class="container op-cont">
+    <!-- Operations / Surgical Services Section --><section class="features-section" id="operations">
+    <div class="container op-cont fade-2">
         <h2 class="section-title">Specialized Eye Operations</h2>
         <div class="line"></div>
-        <div class="features-grid">
-          
-          <!-- Operation 1: LASIK -->
-          <div class="feature-box" id="op-lasik">
-            <h3 class="box-title">LASIK & Refractive Surgery</h3>
-            <p class="box-desc">
-              Advanced laser vision correction procedures designed to permanently reduce or eliminate your dependency on glasses and contact lenses.
-            </p>
-          </div>
 
-          <!-- Operation 2: Cataract -->
-          <div class="feature-box" id="op-cataract">
-            <h3 class="box-title">Laser Cataract Removal</h3>
-            <p class="box-desc">
-              Gentle micro-incision cataract removal combined with premium intraocular lens (IOL) implants to restore clear, sharp focus.
-            </p>
-          </div>
+        <div class="features-slider">
+            <div class="features-grid">
 
-          <!-- Operation 3: Glaucoma -->
-          <div class="feature-box" id="op-glaucoma">
-            <h3 class="box-title">Glaucoma Treatment</h3>
-            <p class="box-desc">
-              Early diagnosis screenings, customized laser treatments, and micro-invasive glaucoma surgeries (MIGS) to protect your optical nerve.
-            </p>
-          </div>
+                <div class="feature-box">
+                    <h3 class="box-title">LASIK & Refractive Surgery</h3>
+                    <p class="box-desc">
+                        Advanced laser vision correction procedures designed to permanently reduce or eliminate your dependency on glasses and contact lenses.
+                    </p>
+                </div>
 
-          <!-- Operation 4: Retina -->
-          <div class="feature-box" id="op-retina">
-            <h3 class="box-title">Retina & Macular Care</h3>
-            <p class="box-desc">
-              Specialized diagnosis and state-of-the-art laser therapies to treat retinal tears, diabetic retinopathy, and macular degeneration.
-            </p>
-          </div>
+                <div class="feature-box">
+                    <h3 class="box-title">Laser Cataract Removal</h3>
+                    <p class="box-desc">
+                        Gentle micro-incision cataract removal combined with premium intraocular lens (IOL) implants to restore clear, sharp focus.
+                    </p>
+                </div>
 
+                <div class="feature-box">
+                    <h3 class="box-title">Glaucoma Treatment</h3>
+                    <p class="box-desc">
+                        Early diagnosis screenings, customized laser treatments, and micro-invasive glaucoma surgeries (MIGS) to protect your optical nerve.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="box-title">Retina & Macular Care</h3>
+                    <p class="box-desc">
+                        Specialized diagnosis and state-of-the-art laser therapies to treat retinal tears, diabetic retinopathy, and macular degeneration.
+                    </p>
+                </div>
+
+                <!-- Duplicate cards -->
+                <div class="feature-box">
+                    <h3 class="box-title">LASIK & Refractive Surgery</h3>
+                    <p class="box-desc">
+                        Advanced laser vision correction procedures designed to permanently reduce or eliminate your dependency on glasses and contact lenses.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="box-title">Laser Cataract Removal</h3>
+                    <p class="box-desc">
+                        Gentle micro-incision cataract removal combined with premium intraocular lens (IOL) implants to restore clear, sharp focus.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="box-title">Glaucoma Treatment</h3>
+                    <p class="box-desc">
+                        Early diagnosis screenings, customized laser treatments, and micro-invasive glaucoma surgeries (MIGS) to protect your optical nerve.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h3 class="box-title">Retina & Macular Care</h3>
+                    <p class="box-desc">
+                        Specialized diagnosis and state-of-the-art laser therapies to treat retinal tears, diabetic retinopathy, and macular degeneration.
+                    </p>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
 
 <section class="about" id="about">
 
@@ -143,7 +170,85 @@
     </div>
 
 </section>
+<section class="form-sec">
+  <div class="form">
 
+    <div class="form-header">
+      <p>GET IN TOUCH</p>
+      <h2>Schedule a Consultation</h2>
+      <span>Fill out the form and our team will contact you.</span>
+    </div>
+
+    <form>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="service">Select Service</label>
+          <select id="service">
+            <option value="">Choose a service</option>
+            <option value="lasik">LASIK & Refractive Surgery</option>
+            <option value="cataract">Cataract Treatment</option>
+            <option value="glaucoma">Glaucoma Treatment</option>
+            <option value="retina">Retina & Macular Care</option>
+            <option value="general">General Eye Checkup</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Tell us about your concern..."
+        ></textarea>
+      </div>
+
+      <button type="submit" class="form-btn">
+        Schedule Consultation →
+      </button>
+
+    </form>
+
+  </div>
+</section>
   </main>
 
   <!-- Footer Section -->

@@ -64,7 +64,7 @@ header {
 }
 
 .logo span {
-  color: brown;
+  color: rgb(216, 160, 119);
 }
 
 .nav-links {
@@ -72,11 +72,13 @@ header {
   align-items: center;
   gap: 50px;
   list-style: none;
-
+  padding-right: 20px;
 }
 
 .nav-links li :hover{
   border-bottom: 1px orange solid;
+  
+
 }
 
 .nav-links a {
@@ -84,7 +86,6 @@ header {
   font-size: 0.8rem;
   letter-spacing: 5px;
   font-weight: 200;
-
   color: white;
   transition: color var(--transition-speed) ease;
 }
@@ -353,6 +354,113 @@ about section
 }
 
 
+/*
+Form section
+*/
+
+.form-sec {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.form {
+    width: 90%;
+    max-width: 900px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+    margin-bottom: 35px;
+}
+
+.form-header p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.form-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.form-header span {
+    color: #777;
+    font-size: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fafafa;
+    transition: 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #222;
+    background: #fff;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-btn:hover {
+    background: #333;
+}
 
 /* 
   FOOTER SECTION
@@ -557,4 +665,54 @@ footer {
     padding-top: 20px;
     width: 100%;
   }
+}
+
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-1 {
+  animation: fade-in-up 2s ease-out forwards;
+}
+.fade-2 {
+  animation: fade-in-up 7s ease-out forwards;
+}
+
+
+
+
+.features-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.features-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+    width: max-content;
+
+    animation: operationsScroll 40s linear infinite;
+}
+
+.feature-box {
+    flex: 0 0 300px;
+}
+
+@keyframes operationsScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
