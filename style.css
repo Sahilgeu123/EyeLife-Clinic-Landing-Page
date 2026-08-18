@@ -195,7 +195,7 @@ header {
   color: rgb(251, 244, 231);
   line-height: 1.15;
   letter-spacing: -1px;
-  margin-bottom:50px;
+  margin-bottom:30px;
 }
 
 .hero-para {
@@ -526,7 +526,6 @@ footer {
   }
   
   .nav-container {
-    flex-direction: ;
     height: auto;
     margin-left: -10px;
     padding: 15px 0px 0px 0px;
@@ -666,28 +665,6 @@ footer {
     width: 100%;
   }
 }
-
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-1 {
-  animation: fade-in-up 2s ease-out forwards;
-}
-.fade-2 {
-  animation: fade-in-up 7s ease-out forwards;
-}
-
-
-
 
 .features-slider {
     width: 100%;

@@ -7,11 +7,11 @@
   <meta name="description" content="Welcome to EyeLife Clinic. We specialize in advanced vision correction, cataract laser removal, glaucoma management, and professional eye treatments.">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="">
 
   <!-- Clean Navbar -->
-  <header>
-    <div class="container nav-container fade-1">
+  <header class="">
+    <div class="container nav-container ">
       <a href="#home" class="logo" id="nav-logo">
         EyeLife<span>.</span>
       </a>
@@ -27,20 +27,20 @@
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main class="scroll-fade">
     
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
+    <section class="hero-section " id="home">
       
-      <div class="container hero-container fade-2">
-        <h1 class="hero-heading" id="hero-title">Clear Vision for a Better Life</h1>
-        <p class="hero-para" id="hero-desc">
+      <div class="container hero-container ">
+        <h1 class="hero-heading " id="hero-title">Clear Vision for a Better Life</h1>
+        <p class="hero-para " id="hero-desc">
           Welcome to EyeLife. Led by experienced eye surgeons, we combine state-of-the-art diagnostic technology with advanced, gentle treatments to preserve and restore your vision.
         </p>
-        <a href="#contact" class="cta-btn" id="cta-button">Schedule Consultation</a>
+        <a href="#contact" class="cta-btn " id="cta-button">Schedule Consultation</a>
       </div>
 
-      <div class="img-container fade-2">
+      <div class="img-container ">
         <p class="center-text">FOCUS</p>
         <p class="p1">SEE LIFE IN</p>
         <p class="p2">RESTORE</p>
@@ -53,8 +53,9 @@
       </div>
     </section>
 
-    <!-- Operations / Surgical Services Section --><section class="features-section" id="operations">
-    <div class="container op-cont fade-2">
+    <!-- Operations / Surgical Services Section -->
+    <section class="features-section scroll-fade" id="operations">
+    <div class="container op-cont">
         <h2 class="section-title">Specialized Eye Operations</h2>
         <div class="line"></div>
 
@@ -123,11 +124,11 @@
     </div>
 </section>
 
-<section class="about" id="about">
+<section class="about scroll-fade" id="about">
 
     <div class="about-left">
 
-        <p class="about-subtitle">ABOUT US</p>
+        <p class="about-subtitle ">ABOUT US</p>
 
         <h2 class="about-title">
             Precision Eye Care
@@ -170,7 +171,7 @@
     </div>
 
 </section>
-<section class="form-sec">
+<section class="form-sec scroll-fade">
   <div class="form">
 
     <div class="form-header">
@@ -265,5 +266,10 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
